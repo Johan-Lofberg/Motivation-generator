@@ -1,0 +1,123 @@
+/* ====== Bas ====== */
+body {
+  background: #16111A;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ====== Centra main ====== */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ====== Kortet ====== */
+.card {
+  background: #2D2039;
+  border-radius: 2rem;
+  padding: 2.5rem 2.5rem 4.5rem 2.5rem;
+  box-shadow: 0 8px 40px 0 rgba(0,0,0,0.32);
+  max-width: 260px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Advice-id */
+.advice-id {
+  color: #A638F6;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  margin-top: 0;
+}
+
+/* Citattext */
+.advice-text {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 0 0 1.7rem 0;
+  font-family: inherit;
+}
+
+.divider {
+  width: 100%;
+  overflow: hidden; 
+}
+
+.divider img {
+  width: 210%;          
+  display: block;
+  opacity: 1;
+  filter: brightness(1.5);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ====== Quotes-knappen (tärning) ====== */
+.dice-btn {
+  background: linear-gradient(135deg, #a579f7, #a932f7);
+  border: none;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  left: 50%;
+  bottom: -32px;
+  transform: translateX(-50%);
+  box-shadow: 0 0 18px 4px #a579f7aa, 0 6px 20px #0a0610;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: box-shadow 0.15s, filter 0.15s;
+}
+
+.dice-btn img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(1.3);
+}
+
+.dice-btn:hover {
+  box-shadow: 0 0 30px 8px #a579f7cc, 0 6px 30px #0a0610;
+  filter: brightness(1.1);
+}
+
+/* ====== Footer ====== */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  opacity: 0.96;
+}
+
+/* ====== Responsivitet ====== */
+@media (max-width: 480px) {
+.logo {
+    position: relative;
+    top: -450px;              /* kan behövas för extra positionering */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
